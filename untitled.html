@@ -12,10 +12,36 @@
 			font-family: 'Lekton', sans-serif;
 			font-size: 16px;
 		}
+		
+		.typed-cursor{
+   			 opacity: 1;
+    		-webkit-animation: blink 0.7s infinite;
+    		-moz-animation: blink 0.7s infinite;
+    		animation: blink 0.7s infinite;
+		}
+
+		@keyframes blink{
+   		 	0% { opacity:1; }
+    		50% { opacity:0; }
+    		100% { opacity:1; }
+		}
+		
+		@-webkit-keyframes blink{
+    		0% { opacity:1; }
+    		50% { opacity:0; }
+    		100% { opacity:1; }
+		}
+		
+		@-moz-keyframes blink{
+    		0% { opacity:1; }
+    		50% { opacity:0; }
+   			100% { opacity:1; }
+   		}
+}
   	</style>
 </head>
 
-<body>
+<body onload="pageScroll()">
 	<div class="container">
 		<div class="row"><br><br></div>
 		
@@ -311,6 +337,11 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="js/typed.js" type="text/javascript"></script>
     <script>
+    	function pageScroll() {
+   			 window.scrollBy(0,1);
+    		scrolldelay = setTimeout(pageScroll,10);
+		}
+		
 	    $(function(){
 	    	$(".o1").typed({
 	    		strings: ["Sometimes it seems like everyone is drowning. They embrace the feeling. That sensation of water filling your lungs, choking you. It&#39s supposed to push you past your limits and bring you back stronger. It&#39s supposed to tear you down and build you back up.<br><br>^1000Except, when I&#39m drowning, I don&#39t want to fight to the surface for air. I want to hold my breath and sink to the bottom of the ocean. I want to feel the water settle between my fingers. I want to be enveloped in its darkness and consoled by its stillness. It&#39s safe on the ocean floor."],
@@ -464,14 +495,8 @@
  																																							showCursor: false,
  																																							callback: function() {
  																																							$(".o19").typed({
- 																																								strings: ["How do you say that you’re not okay?", "How do you say that you wish you had cancer so that you had permission to die?", "How do you say that you are proud of those Cs because it means that you did not die this semester?", "How do you say that you saved Psychiatric Emergency Services in your contacts — just in case?"],
+ 																																								strings: ["How do you say that you’re not okay?", "How do you say that you wish you had cancer so that you had permission to die?", "How do you say that you are proud of those Cs because it means that you did not die this semester?", "How do you say that you saved Psychiatric Emergency Services in your contacts — just in case?", "How do you say that you're not okay?"],
  																																								showCursor: false,
- 																																								callback: function() {
- 																																								$(".t19").typed({
- 																																									strings: ["No one tells what the hardest part is."],
- 																																									showCursor: true,
- 																																								});
- 																																								},
  																																							});
  																																							},
  																																						});
