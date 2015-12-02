@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lekton:400,700' rel='stylesheet' type='text/css'>
+
+	<style>
+		body {
+			background-color: #000000;
+			color: #FFFFFF;
+			font-family: 'Lekton', sans-serif;
+			font-size: 16px;
+		}
+  	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row"><br><br></div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="element"></div>
+			</div>
+		</div> <!-- .row -->
+
+		<div class="row">
+			<div class="col-md-6"></div>
+			<div class="col-md-6">
+				<div class="element1"></div>
+			</div>
+		</div> <!-- .row -->
+
+	</div> <!-- .container -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script>
+	    $(function(){
+	    	$(".element").typed({
+	    		strings: ["Sometimes it seems like everyone is drowning. They embrace the feeling. That sensation of water filling your lungs, choking you. It’s supposed to push you past your limits and bring you back stronger. It’s supposed to tear you down and build you back up."],
+	            typeSpeed: 0,
+            	showCursor: false,
+	      	});
+	  	});
+
+	  	$(function(){
+	    	$(".element1").typed({
+	    		strings: ["^2000Sometimes it seems like everyone is drowning. They embrace the feeling. That sensation of water filling your lungs, choking you. It’s supposed to push you past your limits and bring you back stronger. It’s supposed to tear you down and build you back up."],
+	            typeSpeed: 0,
+            	showCursor: false,
+	      	});
+	  	});
+    </script>
+
+</body>
+</html>
