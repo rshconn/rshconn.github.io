@@ -18,16 +18,51 @@
 <body>
 	<div class="container">
 		<div class="row"><br><br></div>
+		
+		<!-- One -->
 		<div class="row">
 			<div class="col-md-6">
-				<div class="element"></div>
+				<div class="o1"></div>
 			</div>
 		</div> <!-- .row -->
-
+		
+		<div class="row"><br></div>
+		
+		<!-- Two -->
 		<div class="row">
 			<div class="col-md-6"></div>
 			<div class="col-md-6">
-				<div class="element1"></div>
+				<div class="t1"></div>
+			</div>
+		</div> <!-- .row -->
+		
+		<!-- One -->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="o2"></div>
+			</div>
+		</div> <!-- .row -->
+		
+		<!-- Two -->
+		<div class="row">
+		<div class="col-md-6"></div>
+			<div class="col-md-6">
+				<div class="t2"></div>
+			</div>
+		</div> <!-- .row -->
+		
+		<!-- One -->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="o3"></div>
+			</div>
+		</div> <!-- .row -->
+		
+		<!-- Two -->
+		<div class="row">
+		<div class="col-md-6"></div>
+			<div class="col-md-6">
+				<div class="t3"></div>
 			</div>
 		</div> <!-- .row -->
 
@@ -37,18 +72,45 @@
     <script src="js/typed.js" type="text/javascript"></script>
     <script>
 	    $(function(){
-	    	$(".element").typed({
-	    		strings: ["Sometimes it seems like everyone is drowning. They embrace the feeling. That sensation of water filling your lungs, choking you. It’s supposed to push you past your limits and bring you back stronger. It’s supposed to tear you down and build you back up."],
+	    	$(".o1").typed({
+	    		strings: ["Sometimes it seems like everyone is drowning. They embrace the feeling. That sensation of water filling your lungs, choking you. It&#39s supposed to push you past your limits and bring you back stronger. It&#39s supposed to tear you down and build you back up.<br><br>^1000Except, when I&#39m drowning, I don&#39t want to fight to the surface for air. I want to hold my breath and sink to the bottom of the ocean. I want to feel the water settle between my fingers. I want to be enveloped in its darkness and consoled by its stillness. It&#39s safe on the ocean floor."],
 	            typeSpeed: 0,
             	showCursor: false,
-	      	});
-	  	});
-
-	  	$(function(){
-	    	$(".element1").typed({
-	    		strings: ["^2000Sometimes it seems like everyone is drowning. They embrace the feeling. That sensation of water filling your lungs, choking you. It’s supposed to push you past your limits and bring you back stronger. It’s supposed to tear you down and build you back up."],
-	            typeSpeed: 0,
-            	showCursor: false,
+            	callback: function(){
+	    					$(".t1").typed({
+	    						strings: ["I'm scared that I'm not myself in here and I'm scared that I am."],
+	            				typeSpeed: 0,
+            					showCursor: false,
+            					callback: function() {
+            								$(".o2").typed({
+            									strings: ["Depression is"],
+            									typeSpeed:0,
+            									showCursor: false,
+            									callback: function() {
+            												$(".t2").typed({
+            													strings: ["A medical illness that affects how you feel, think, behave causing persistent feelings of sadness and loss of interest in previously enjoyed activities."],
+            													typeSpeed:0,
+            													showCursor: false,
+            													callback: function() {
+            													$(".o3").typed({
+            														strings: ["Insomnia"],
+            														typeSpeed:0,
+            														showCursor: false,
+            														callback: function() {
+            														$(".t3").typed({
+            															strings: ["Associated with a sad, apathetic  or irritable mood, crying, and a lack of motivation."],
+            															typeSpeed:0,
+            															showCursor: false,
+            														});
+            														},
+            												});
+            												},
+            											});
+            									},
+            								});
+            					},
+	      					});
+	  			},
 	      	});
 	  	});
     </script>
