@@ -4,4 +4,4 @@ Built with help from Bootstrap, Font Awesome, and Typed.js
 
 ------------------------------
 #####To Run Locally
-$ python -m HTTPServer 
+$ python -m SimpleHTTPServer 
