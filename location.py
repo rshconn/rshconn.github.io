@@ -14,10 +14,14 @@ api = tweepy.API(auth)
 user = api.get_user('lamujerquixote')
 location = user.location
 
-#print location
-
 mapbox_token = "pk.eyJ1IjoibGFtdWplcnF1aXhvdGUiLCJhIjoiRXNtU2loUSJ9.l6qgPI_jPX6uGbfGPm6u8w"
 geocoder = mapbox.Geocoder(access_token=mapbox_token)
 
+# Geocode location from Twitter 
 response = geocoder.forward(location)
+
+# Send JSON response of latitude and longitude to port
+# Latitude & longitude is object "center" from response 
+
+# AJAX 
 print response.json()
