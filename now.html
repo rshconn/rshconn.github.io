@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visual Culture Final Project">
+    <meta name="author" content="Rachel Connolly">
+
+    <title>Visual Culture Final Project</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.20/dist/jquery.flip.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <style>
+    img {
+      width: 100%;
+      height: auto;
+      padding-bottom: 10%;
+    }
+    </style>
+</head>
+
+<!-- Use offset to center cols? -->
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <p style="text-align:center">HOW LONG IS NOW?<p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-2">
+        <div id="card0">
+          <div class="front">
+            <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+          </div>
+          <div class="back">
+            <p style="text-align:center">Location</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div id="card1">
+          <div class="front">
+            <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+          </div>
+          <div class="back">
+            <p style="text-align:center">Location</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-2">
+        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+      </div>
+      <div class="col-md-2">
+        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+      </div>
+      <div class="col-md-2">
+        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-2">
+        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+      </div>
+      <div class="col-md-2">
+        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+      </div>
+      <div class="col-md-2">
+        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+
+  <script>
+    $("#card0").flip({
+      trigger: 'hover',
+    })
+    $("#card1").flip({
+      trigger: 'hover',
+    })
+  </script>
+</body>
+</html>
+
