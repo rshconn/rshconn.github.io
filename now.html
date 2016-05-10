@@ -10,92 +10,135 @@
     <title>Visual Culture Final Project</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.20/dist/jquery.flip.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
      <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     
     <style>
+    body {
+      font-family: 'PT Serif', serif;
+    }
     img {
       width: 100%;
       height: auto;
       padding-bottom: 10%;
     }
+    
     </style>
 </head>
 
-<!-- Use offset to center cols? -->
 <body>
   <div class="container-fluid">
     <div class="row">
-      <p style="text-align:center">HOW LONG IS NOW?<p>
+      <h1 style="text-align:center">HOW LONG IS NOW?</h1>
     </div>
-
+    <!-- Row 0 -->
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-2">
-        <div id="card0">
+        <div id="card0" class="card">
           <div class="front">
             <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
           </div>
           <div class="back">
-            <p style="text-align:center">Location</p>
+            <p style="text-align:center">Location 0</p>
           </div>
         </div>
       </div>
       <div class="col-md-2">
-        <div id="card1">
+        <div id="card1" class="card">
           <div class="front">
             <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
           </div>
           <div class="back">
-            <p style="text-align:center">Location</p>
+            <p style="text-align:center">Location 1</p>
           </div>
         </div>
       </div>
       <div class="col-md-2">
-        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+        <div id="card2" class="card">
+          <div class="front">
+            <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+          </div>
+          <div class="back">
+              <p>Location 2</p>
+          </div>
+        </div>
       </div>
       <div class="col-md-3"></div>
     </div>
-
+    <!-- Row 1 -->
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-2">
-        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+        <div id="card0" class="card">
+          <div class="front">
+            <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+          </div>
+          <div class="back">
+            <p style="text-align:center">Location 3</p>
+          </div>
+        </div>
       </div>
       <div class="col-md-2">
-        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+        <div id="card1" class="card">
+          <div class="front">
+            <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+          </div>
+          <div class="back">
+            <p style="text-align:center">Location 4</p>
+          </div>
+        </div>
       </div>
       <div class="col-md-2">
-        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+        <div id="card2" class="card">
+          <div class="front">
+            <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+          </div>
+          <div class="back">
+              <p>Location 5</p>
+          </div>
+        </div>
       </div>
       <div class="col-md-3"></div>
     </div>
-
+    <!-- Row 2 -->
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-2">
-        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+        <div id="card0" class="card">
+          <div class="front">
+            <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+          </div>
+          <div class="back">
+            <h5 style="text-align:center">Location 6</h5>
+          </div>
+        </div>
       </div>
       <div class="col-md-2">
-        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+        <div id="card1" class="card">
+          <div class="front">
+            <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+          </div>
+          <div class="back">
+            <h5 style="text-align:center">Location 7</h5>
+          </div>
+        </div>
       </div>
       <div class="col-md-2">
-        <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+        <div id="card2" class="card">
+          <div class="front">
+            <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+          </div>
+          <div class="back">
+              <h5 style="text-align:center">Location 8</h5>
+          </div>
+        </div>
       </div>
       <div class="col-md-3"></div>
     </div>
   </div>
-
-  <script>
-    $("#card0").flip({
-      trigger: 'hover',
-    })
-    $("#card1").flip({
-      trigger: 'hover',
-    })
-  </script>
 </body>
 </html>
 
