@@ -1,98 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Visual Culture Final Project">
-    <meta name="author" content="Rachel Connolly">
-
     <title>How Long Is Now</title>
+    <meta name="description" content="Visual Culture Final Project">
 
-    <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="/css/thumbnail-gallery.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/fluidbox.min.css">
 
     <link href='https://fonts.googleapis.com/css?family=Lateef' rel='stylesheet' type='text/css'>
 
     <style>
-      body {
+    body {
         font-family: 'Lateef', cursive;
-      }
-      img {
+    }
+
+    img {
         width: 200px;
         height: 200px;
-      }
+    }
+
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: black;
+    }
+
+    a:active {
+        color: black;
+        text-decoration: bold;
+    }
+
+    /* centered columns styles */
+    .row-centered {
+        text-align:center;
+    }
+    .col-centered {
+        display:inline-block;
+        float:none;
+        /* reset the text-align */
+        text-align:left;
+        /* inline-block space fix */
+        margin-right:-4px;
+        
+    }
+    .col-fixed {
+        /* custom width */
+        width: 208px;
+    }
+
+    /* visual styles */
+    body {
+        padding-bottom:40px;
+    }
+    h1 {
+        margin:40px 0px 20px 0px;
+        color:#0000;
+        font-size:48px;
+        line-height:34px;
+        text-align:center;
+    }
+    h3 {
+        margin-top: 1%;
+        margin-right: 3%;
+        font-size: 24px;
+    }
+    .item {
+        width:100%;
+        height: 100%;
+        background: #fff;
+        text-align: center;
+    }
+
+    /* content styles */
+    .item {
+        display:table;
+    }
+    .content {
+        display:table-cell;
+        vertical-align:middle;
+        text-align:center;
+    }
+
+    html,
+    body {
+        width:100%;
+        height:100%;
+    }
+    html {
+        display:table;
+    }
+    body {
+        display:table-cell;
+        vertical-align:middle;
+    }
     </style>
-
 </head>
-
 <body>
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 style="text-align:center">HOW LONG IS NOW!</h1>
-            </div>
+    <h3 style="text-align:right">
+        <a href="/index.html">HOME</a>
+        <a href="/projects/about.html">ABOUT</a>
+        <a href="/projects/now.html">PROJECT</a>
+    </h3>
 
-            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://cdn1.theodysseyonline.com/files/2016/01/10/635880403615266094-892416457_pup.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://cdn1.theodysseyonline.com/files/2016/01/10/635880403615266094-892416457_pup.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://cdn1.theodysseyonline.com/files/2016/01/10/635880403615266094-892416457_pup.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://cdn1.theodysseyonline.com/files/2016/01/10/635880403615266094-892416457_pup.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://cdn1.theodysseyonline.com/files/2016/01/10/635880403615266094-892416457_pup.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://cdn1.theodysseyonline.com/files/2016/01/10/635880403615266094-892416457_pup.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://cdn1.theodysseyonline.com/files/2016/01/10/635880403615266094-892416457_pup.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://cdn1.theodysseyonline.com/files/2016/01/10/635880403615266094-892416457_pup.jpeg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail">
-                    <img class="img-responsive" src="http://cdn1.theodysseyonline.com/files/2016/01/10/635880403615266094-892416457_pup.jpeg" alt="">
-                </a>
-            </div>
+    <h1>HOW LONG IS NOW</h1>
+    <div class="container">
+        <div class="row row-centered">
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/girl.jpg"><img src="/img/girl.jpg"></img></a></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/golden_brick.jpg"><img src="/img/golden_brick.jpg"></img></a></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/heart.jpg"><img src="/img/heart.jpg"></img></a></div></div></div>
+        </div>
+      <div class="row row-centered">
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><img src="/img/holocaust_memorial.jpg"></img></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><img src="/img/petals.jpg"></img></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><img src="/img/river.jpg"></img></div></div></div>
+        </div>
+          <div class="row row-centered">
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><img src="/img/sbahn.jpg"></img></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><img src="/img/tempelhof.jpg"></img></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><img src="/img/construction.jpg"></img></div></div></div>
         </div>
     </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="/js/jquery.fluidbox.min.js"></script>
+    <script>
+        $(function () {
+            $('a').fluidbox();
+        });
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
+        $(document).keyup(function(e) {
+            if (e.keyCode == 27) { // escape key maps to keycode `27`
+                $('a').fluidbox('close.fluidbox');
+            }
+        });
+    </script>
 </body>
 </html>
