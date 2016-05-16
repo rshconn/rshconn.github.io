@@ -63,7 +63,6 @@
     }
     h1 {
         margin:40px 0px 20px 0px;
-        color:#0000;
         font-size:48px;
         line-height:34px;
         text-align:center;
@@ -114,19 +113,19 @@
     <h1>HOW LONG IS NOW</h1>
     <div class="container">
         <div class="row row-centered">
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/holocaust_memorial.jpg"><img src="/img/rsz_holocaust_memorial.jpg"></img></a></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/mauerpark.jpg"><img src="/img/rsz_mauerpark.jpg"></img></a></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/sbahn.jpg"><img src="/img/rsz_sbahn.jpg"></img></a></div></div></div>
+        </div>
+      <div class="row row-centered">
             <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/girl.jpg"><img src="/img/rsz_girl.jpg"></img></a></div></div></div>
             <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/golden_brick.jpg"><img src="/img/rsz_golden_brick.jpg"></img></a></div></div></div>
             <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/heart.jpg"><img src="/img/rsz_heart.jpg"></img></a></div></div></div>
         </div>
-      <div class="row row-centered">
-            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/holocaust_memorial.jpg"><img src="/img/rsz_holocaust_memorial.jpg"></img></a></div></div></div>
-            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/petals.jpg"><img src="/img/rsz_petals.jpg"></img></a></div></div></div>
-            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/river.jpg"><img src="/img/rsz_river.jpg"></img></a></div></div></div>
-        </div>
           <div class="row row-centered">
-            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/sbahn.jpg"><img src="/img/rsz_sbahn.jpg"></img></a></div></div></div>
-            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/tempelhof.jpg"><img src="/img/rsz_tempelhof.jpg"></img></a></div></div></div>
             <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/construction.jpg"><img src="/img/rsz_construction.jpg"></img></a></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/river.jpg"><img src="/img/rsz_river.jpg"></img></a></div></div></div>
+                        <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/tempelhof.jpg"><img src="/img/rsz_tempelhof.jpg"></img></a></div></div></div>
         </div>
     </div>
 
@@ -137,12 +136,6 @@
             $('a').fluidbox({
                 immediateOpen: true,
             });
-        });
-
-        $(document).keyup(function(e) {
-            if (e.keyCode == 27) { // escape key maps to keycode `27`
-                $('a').fluidbox('close.fluidbox');
-            }
         });
     </script>
 </body>
