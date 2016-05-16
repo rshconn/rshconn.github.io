@@ -134,7 +134,9 @@
     <script src="/js/jquery.fluidbox.min.js"></script>
     <script>
         $(function () {
-            $('a').fluidbox();
+            $('a').fluidbox({
+                immediateOpen: true,
+            });
         });
 
         $(document).keyup(function(e) {
