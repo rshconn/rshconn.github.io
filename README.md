@@ -2,16 +2,16 @@
 That time I made a personal website. 
 Built with help from Bootstrap, Font Awesome, and Typed.js
 
-####index.html
+####/index.html
 Personal Website
 
-####gangelwagen.html
+####/projects/gangelwagen.html
 Project for Creative Processes
 
-####untitled.html
+####/projects/untitled.html
 Final Project for Creative Processes
 
-####now.html
+####/projects/now.html
 Final Photo Essay for Visual Cuture
 
 ------------------------------
