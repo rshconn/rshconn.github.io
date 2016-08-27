@@ -17,9 +17,9 @@
 </head>
 
 <body>
-	<audio id="gangelwagen" src="/gangelwagen/Gangelwagen.m4a"></audio>
+	<audio id="gangelwagen" src="Gangelwagen.m4a"></audio>
 
-	<img id="word" width="50%" height="50%" class="absolute-center img-responsive" onclick="changeImage()" src="/gangelwagen/1.png">
+	<img id="word" width="50%" height="50%" class="absolute-center img-responsive" onclick="changeImage()" src="1.png">
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 
@@ -28,11 +28,11 @@
 		    var image = document.getElementById('word');
 		    if (image.src.match("1")) {
 		    	document.getElementById('gangelwagen').play();
-		        image.src = "/gangelwagen/2.png";
+		        image.src = "2.png";
 		        $('body').css('background', 'black');
 		    } else {
 		    	document.getElementById('gangelwagen').play();
-		        image.src = "/gangelwagen/1.png";
+		        image.src = "1.png";
 		        $('body').css('background', 'white');
 		    }
 		}
