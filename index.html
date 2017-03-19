@@ -4,21 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Hello! I'm Rachel.">
+    <meta name="author" content="Rachel Connolly">
 
     <title>Rachel Connolly</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="honeycombs/js/jquery.honeycombs.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="honeycombs/css/honeycombs.css" />
 
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css' rel='stylesheet' />
-    
-     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css' rel='stylesheet'>
     
     <style>
       html {
@@ -61,20 +58,23 @@
         float: none;
         margin: 0 auto;
       }
-        
-      h1{
-        text-align: center;
-        font-size: 48px;
-        margin: 0 auto;
+
+      .content {
+        background-color: white;
+        opacity: 0.8;
+        height: 100%;
       }
         
-      h2{
-        text-align: center;
+      h1{
+        font-size: 48px;
+        margin: 0 auto;
       }
         
       ul{
         text-align: center;
         list-style-type: none;
+        padding: 0 0 12px 0;
+        color: black;
       }
 
       li {
@@ -94,36 +94,41 @@
   <div id='map'></div>
     <div class="container-fluid">
        <div class="row-fluid">
-          <div class="box">
+          <div class="col-xs-6"></div>
+          <div class="col-xs-6 content">
             <h1 style="">Rachel Connolly</h1>
             <p></p>
             <!-- Social Links -->
             <div style="text-align: center">
-              <ul style="padding: 0 0 12px 0">
+              <ul>
                 <br>
-                <li><a href="mailto:rshconn@umich.edu" target=_blank><i class="fa fa-envelope-o" style="color: white"></i></a></li>
-                <li><a href="/Connolly_Resume.pdf" target=_blank><i class="fa fa-file-text-o" style="color: white"></i></a></li>
-                <li><a href="https://twitter.com/lamujerquixote" target=_blank> <i class="fa fa-twitter" style="color: white"></i></a></li>
-                <li><a href="http://www.facebook.com/rshconn" target=_blank><i class="fa fa-facebook" style="color: white"></i></a></li>
-                <li><a href="https://medium.com/@lamujerquixote" target=_blank><i class="fa fa-medium" style="color: white"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/rshconn" target=_blank><i class="fa fa-linkedin" style="color:white"></i></a></li>
+                <li><a href="mailto:rshconn@umich.edu" target=_blank><i class="fa fa-envelope-o"></i></a></li>
+                <li><a href="/Connolly_Resume.pdf" target=_blank><i class="fa fa-file-text-o"></i></a></li>
+                <li><a href="https://twitter.com/lamujerquixote" target=_blank> <i class="fa fa-twitter"></i></a></li>
+                <li><a href="http://www.facebook.com/rshconn" target=_blank><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://medium.com/@lamujerquixote" target=_blank><i class="fa fa-medium"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rshconn" target=_blank><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/lamujerquixote/" target=_blank><i class="fa fa-instagram"></i></a></li>
               </ul>
             </div>
-          </div> <!-- .box -->
-        </div> <!-- .row -->
-    </div> <!-- .container -->
+          </div> <!-- .col-md-6 -->
+        </div> <!-- .row-fluid -->
+    </div> <!-- .container-fluid -->
   </div> <!-- .map -->
 
-    <!-- Should be AJAX -- >
      <script>
-      mapboxgl.accessToken = 'pk.eyJ1IjoibGFtdWplcnF1aXhvdGUiLCJhIjoiRXNtU2loUSJ9.l6qgPI_jPX6uGbfGPm6u8w';
-      var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v8',
-        center: [-74.50, 40],
-        zoom: 9,
-        interactive: false
-      });
+     $( document ).ready(function() {
+        console.log('ready')
+        mapboxgl.accessToken = 'pk.eyJ1IjoibGFtdWplcnF1aXhvdGUiLCJhIjoiRXNtU2loUSJ9.l6qgPI_jPX6uGbfGPm6u8w';
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v9',
+          center: [-74.50, 40],
+          zoom: 9,
+          interactive: false
+        });
+        console.log(map)
+    });
     </script>
 
 </body>

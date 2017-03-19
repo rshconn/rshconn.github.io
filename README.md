@@ -2,18 +2,18 @@
 That time I made a personal website. 
 Built with help from Bootstrap, Font Awesome, and Typed.js
 
-####/index.html
+#### /index.html
 Personal Website
 
-####/projects/gangelwagen.html
+#### /projects/gangelwagen.html
 Project for Creative Processes
 
-####/projects/untitled.html
+#### /projects/untitled.html
 Final Project for Creative Processes
 
-####/projects/now.html
+#### /projects/now.html
 Final Photo Essay for Visual Cuture
 
 ------------------------------
-#####To Run Locally
+##### To Run Locally
 $ python -m SimpleHTTPServer 
