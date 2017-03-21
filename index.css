@@ -59,7 +59,7 @@ h3 {
 }
 
 a, a:hover, a:visited {
-  color: #FFFFFF;
+  color: black !important;
   text-decoration: none;
   height: auto;
 }
@@ -73,5 +73,9 @@ li {
     display: inline-block;
     padding-right: 24px;
     color: black !important;
+}
+
+i {
+    color: black; 
 }
 
