@@ -24,18 +24,23 @@
 <body>
   <div id="map"></div>
   <div class="container-fluid">
-
        <div class="row">
-          <div class="col-xs-4"></div>
-          <div class="col-xs-4"></div>
-          <div class="col-xs-4"></div>
-        </div>
+          <div class="col-xs-6" style="padding-left: 10%">
+            <p><h1>Hi. I'm Rachel.</h1></p>
+            <p>
+              <button type="submit" id="home">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </button>
 
-       <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-8">
-            <h1>Hi. I'm Rachel.</h1>
+              <button type="submit" id="school">
+                <i class="fa fa-university" aria-hidden="true"></i>
+              </button>
+            </p>
+          </div>
+          <div class="col-xs-6" style="padding-right: 10%">
             <ul>
+              <p><h3>I am a senior at the University of Michigan studying computer science</h3></p>
+              <p>I like </p>
               <h2>
                 <li><a href="/projects" target=_blank>projects</a></li>
                 <li><a href="/Connolly_Resume.pdf" target=_blank>resume</a></li>
@@ -53,21 +58,13 @@
                 <li><a href="https://www.instagram.com/lamujerquixote/" target=_blank><i class="fa fa-instagram" style="color:black"></i></a></li>
               </ul>
           </div> <!-- .col-md-6 -->
-          <div class-"col-xs-2"></div>
        </div> <!-- .row -->
-
-       <div class="row">
-          <div class="col-xs-4"></div>
-          <div class="col-xs-4"></div>
-          <div class="col-xs-4"></div>
-       </div>
-
     </div> <!-- .container-fluid -->
 
      <script>
      $( document ).ready(function() {
         mapboxgl.accessToken = 'pk.eyJ1IjoibGFtdWplcnF1aXhvdGUiLCJhIjoiRXNtU2loUSJ9.l6qgPI_jPX6uGbfGPm6u8w';
-        var map = new mapboxgl.Map({
+        new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v9',
           center: [-83.742804, 42.281371],
@@ -75,6 +72,26 @@
           interactive: false
         });
     });
+
+      $( "#home" ).click(function() {
+        new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v9',
+          center: [-73.562230, 41.023896],
+          zoom: 10,
+          interactive: false
+        });
+      });
+
+      $( "#school" ).click(function() {
+        new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v9',
+          center: [-83.742340, 42.275159],
+          zoom: 10,
+          interactive: false
+        });
+      });
     </script>
 
 </body>

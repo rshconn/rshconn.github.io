@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>How Long Is Now</title>
+    <meta name="description" content="Visual Culture Final Project">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/fluidbox.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Lateef' rel='stylesheet' type='text/css'>
+
+    <style>
+    body {
+        font-family: 'Lateef', cursive;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: black;
+    }
+
+    a:active {
+        color: black;
+        text-decoration: bold;
+    }
+
+    /* centered columns styles */
+    .row-centered {
+        text-align:center;
+    }
+    .col-centered {
+        display:inline-block;
+        float:none;
+        /* reset the text-align */
+        text-align:left;
+        /* inline-block space fix */
+        margin-right:-4px;
+        
+    }
+    .col-fixed {
+        /* custom width */
+        width: 208px;
+    }
+
+    /* visual styles */
+    body {
+        padding-bottom:40px;
+    }
+    h1 {
+        margin:40px 0px 20px 0px;
+        font-size:48px;
+        line-height:34px;
+        text-align:center;
+    }
+    h3 {
+        margin-top: 1%;
+        margin-right: 3%;
+        font-size: 24px;
+    }
+    .item {
+        width:100%;
+        height: 100%;
+        background: #fff;
+        text-align: center;
+    }
+
+    /* content styles */
+    .item {
+        display:table;
+    }
+    .content {
+        display:table-cell;
+        vertical-align:middle;
+        text-align:center;
+    }
+
+    html,
+    body {
+        width:100%;
+        height:100%;
+    }
+    html {
+        display:table;
+    }
+    body {
+        display:table-cell;
+        vertical-align:middle;
+    }
+    </style>
+</head>
+<body>
+    <h3 style="text-align:right">
+        <a href="/projects/now.html">project</a>
+        <a href="/projects/about.html">about</a>
+        <a href="/index.html">home</a>
+    </h3>
+
+    <h1>HOW LONG IS NOW</h1>
+    <div class="container">
+        <div class="row row-centered">
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/holocaust_memorial.jpg"><img src="/img/rsz_holocaust_memorial.jpg"></img></a></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/mauerpark.jpg"><img src="/img/rsz_mauerpark.jpg"></img></a></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/sbahn.jpg"><img src="/img/rsz_sbahn.jpg"></img></a></div></div></div>
+        </div>
+      <div class="row row-centered">
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/girl.jpg"><img src="/img/rsz_girl.jpg"></img></a></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/golden_brick.jpg"><img src="/img/rsz_golden_brick.jpg"></img></a></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/heart.jpg"><img src="/img/rsz_heart.jpg"></img></a></div></div></div>
+        </div>
+          <div class="row row-centered">
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/construction.jpg"><img src="/img/rsz_construction.jpg"></img></a></div></div></div>
+            <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/river.jpg"><img src="/img/rsz_river.jpg"></img></a></div></div></div>
+                        <div class="col-xs-6 col-centered col-fixed"><div class="item"><div class="content"><a href="/img/tempelhof.jpg"><img src="/img/rsz_tempelhof.jpg"></img></a></div></div></div>
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="/js/jquery.fluidbox.min.js"></script>
+    <script>
+        $(function () {
+            $('a').fluidbox({
+                immediateOpen: true,
+            });
+        });
+    </script>
+</body>
+</html>
