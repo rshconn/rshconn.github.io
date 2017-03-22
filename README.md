@@ -15,5 +15,10 @@ Final Project for Creative Processes
 Final Photo Essay for Visual Cuture
 
 ------------------------------
+<<<<<<< HEAD
 ##### To Run Locally
 $ python -m SimpleHTTPServer 
+=======
+#### To Run Locally
+$ `python -m SimpleHTTPServer`
+>>>>>>> f71fbab3cc7f3b53adb263a5c481de0406df376a
