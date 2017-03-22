@@ -19,7 +19,6 @@ $( document ).ready(function() {
     });
 
       $( "#home" ).click(function() {
-        console.log("home click")
         new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v9',
