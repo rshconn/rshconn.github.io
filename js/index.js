@@ -1,6 +1,8 @@
+var map;
+
 $( document ).ready(function() {
         mapboxgl.accessToken = 'pk.eyJ1IjoibGFtdWplcnF1aXhvdGUiLCJhIjoiRXNtU2loUSJ9.l6qgPI_jPX6uGbfGPm6u8w';
-        new mapboxgl.Map({
+        map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v9',
           center: [-83.742804, 42.281371],
@@ -19,7 +21,7 @@ $( document ).ready(function() {
     });
 
       $( "#home" ).click(function() {
-        new mapboxgl.Map({
+        map.flyTo({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v9',
           center: [-73.562230, 41.023896],
@@ -29,7 +31,7 @@ $( document ).ready(function() {
       });
 
       $( "#school" ).click(function() {
-        new mapboxgl.Map({
+        map.flyTo({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v9',
           center: [-83.742340, 42.275159],
@@ -39,7 +41,7 @@ $( document ).ready(function() {
       });
 
       $( "#ice_cream" ).click(function() {
-        new mapboxgl.Map({
+        map.flyTo({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v9',
           center: [-122.319767, 47.615144],
@@ -51,7 +53,7 @@ $( document ).ready(function() {
       $( "#anywhere" ).click(function() {
         var lon = (Math.round(Math.random()) * 2 - 1) * (Math.random() * 180)
         var lat = (Math.round(Math.random()) * 2 - 1) * (Math.random() * 90)
-        new mapboxgl.Map({
+        map.flyTo({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v9',
           center: [lon, lat],
