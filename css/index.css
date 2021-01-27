@@ -9,66 +9,85 @@ html {
 body {
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 10%;
     font-family: 'Pontano Sans', sans-serif;
     color: black;
 }
 
 h1 {
-    font-size: 48px;
-    font-weight: bold;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    display: inline;
-    margin-right: 24px;
+  font-size: 24px;
+  display: inline;
+  margin-right: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  display: inline;
+  margin-right: 24px;
 }
 
 a, a:hover, a:visited {
-  color: black !important;
+  color: #326496;
   text-decoration: none !important;
   height: auto;
+  font-weight: bold;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0 !important;
+  list-style-type: none;
+  padding: 0 !important;
 }
 
 li {
-    display: inline;
-    padding-right: 24px;
-    color: black !important;
-    font-size: 24px;
+  display: inline;
+  padding-right: 24px;
+  color: black !important;
 }
 
 button {
-    border: 2px solid black;
-    background-color: transparent;
-    display: inline;
+  border: 2px solid black;
+  background-color: transparent;
+  display: inline;
 }
 
 .container-fluid {
-    height: 100%;
-    display: table;
-    width: 100%;
-    padding: 0;
-    opacity: 0.8;
-    background-color: white;
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  background-color: white;
 }
 
 .row {
-    margin-top: 10%;
+  margin-bottom: 1%;
 }
 
-#map {
-    position:absolute;
-    top:0; bottom:0; 
-    width:100%; 
+.header {
+  text-align: right;
 }
 
+.nav {
+  color: black !important;
+  text-decoration: none !important;
+  height: auto;
+  font-weight: bold;
+}
 
+.margin {
+  margin-bottom: 12px;
+}
 
+.project-list li{
+   display: block;
+}
 
+#map{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  display: inline-block;
+}
